@@ -55,3 +55,7 @@ images
 ```
 
 From here, you can edit the generated markdown files for each associated photo.
+
+## Further Customization
+
+Like any other website, further customization can be applied as necessary - much of which can be configured in the `index.html` and `style.css` files.
