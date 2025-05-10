@@ -1,0 +1,263 @@
+body {
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .75em;
+
+  text-justify: auto;
+  color: #222;
+  background-color: #eee;
+  margin: .75em;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  bottom: 1em;
+  color: rgba(0, 0, 0, 0.1);
+  font-size: .75em;
+}
+
+h1 {
+  margin-bottom: .5em;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #222;
+}
+
+a{
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 1em;
+}
+
+.section-container {
+  margin: .75em;
+  display: block;
+  width: 900px;
+}
+
+.toggle-btn {
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+
+  width: 100%;
+  padding: .5em;
+  margin: auto;
+  text-align: left;
+  cursor: pointer;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: none;
+  justify-content: center;
+  align-items: top;
+  object-fit: contain;
+
+  padding: 1em;
+}
+
+.content img {
+  display: block;
+  margin: auto;
+  border: 1em;
+  border-style: solid;
+  border-color: white;
+  width: 100%;
+  max-width: 540px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.text-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.text-box::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 4px;
+}
+
+.text-box::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.8);
+}
+
+/* Info Button */
+.info-btn {
+  position: absolute;
+  align-content: center;
+  vertical-align: middle;
+  text-align: center;
+  bottom: 2em;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+
+  font-family: "Spline Sans Mono", monospace;
+  padding: .5em;
+  margin: auto;
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-box {
+  display: none;
+  position: absolute;
+  text-justify: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 540px;
+  margin: 8em;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  color: #222;
+  z-index: 1;
+  border-radius: 4px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 100, 100, 0.5) transparent;
+}
+
+.text-box .text-content {
+  padding: 2em;
+  line-height: 1.6;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background: transparent;
+  color: black;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Markdown Styling */
+/* Headers */
+.text-box h1 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222; /* Darker for emphasis */
+}
+
+.text-box h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.text-box h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Paragraphs */
+.text-box p {
+  margin-bottom: 10px;
+}
+
+/* Lists */
+.text-box ul {
+  margin: 10px 0 10px 20px;
+  padding-left: 20px;
+  list-style-type: disc; /* Bullets for unordered lists */
+}
+
+.text-box ol {
+  margin: 10px 0 10px 20px;
+  padding-left: 20px;
+  list-style-type: decimal; /* Numbers for ordered lists */
+}
+
+.text-box li {
+  margin-bottom: 5px;
+}
+
+/* Blockquotes */
+.text-box blockquote {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+  color: #555;
+  font-style: italic;
+}
+
+/* Code blocks */
+.text-box pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto; /* Allow horizontal scrolling for long code */
+  color: #c7254e;
+  border: 1px solid #ddd;
+}
+
+.text-box code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #c7254e;
+}
+
+/* Links */
+.text-box a {
+  color: #007BFF; /* Bootstrap link blue */
+  text-decoration: none;
+}
+
+.text-box a:hover {
+  text-decoration: underline;
+}
+
+/* Horizontal rules */
+.text-box hr {
+  border: 0;
+  border-top: 1px solid #222;
+  margin: 10px 0;
+}
+
+/* Images */
+.text-box img {
+  max-width: 100%; /* Ensure images don’t overflow the box */
+  height: auto;
+  margin: 10px 0;
+  display: block; /* Center images */
+}
